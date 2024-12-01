@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog Page</title>
+		<!-- Link CSS Flowbit -->
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+		<!-- Link CSS -->
+		<link rel="stylesheet" href="./css/mian.css" />
+		<!-- Link Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="bg-white border-gray-200">
+			<section class="flex justify-between py-5 px-8 background-primary-color text-white font-medium flex-wrap">
+				<div class="flex items-center gap-5">
+					<a href="/"><i class="bi bi-telephone-plus"> </i>(+855) 9234234</a>
+					<a href="#"><i class="bi bi-envelope-check"></i> kstore@gmail.com</a>
+				</div>
+				<div>
+					<p class="hidden md:block">Follow us and get a chance to win 80% off</p>
+				</div>
+				<div>
+					<span class="flex items-center gap-4">
+						Follow Us :
+						<a a href="#"><i class="bi bi-instagram"></i> </a>
+						<a a href="#"><i class="bi bi-youtube"></i></a>
+						<a a href="#"><i class="bi bi-facebook"></i></a>
+						<a a href="#"><i class="bi bi-twitter"></i></a>
+					</span>
+				</div>
+			</section>
+			<section class="border">
+				<div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+					<a href="/index.html">
+						<span class="self-center text-2xl font-semibold whitespace-nowrap">KStore</span>
+					</a>
+					<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+						<section class="flex items-center gap-4">
+							<span class="hidden md:flex items-center gap-3">
+								<i class="bi bi-person text-2xl"></i>
+								<p><a href="./login.html" class="style-navbar text-lg font-medium">Login</a> / <a href="./register.html" class="style-navbar text-lg font-medium">Register</a></p>
+							</span>
+							<a href=""><i class="bi bi-search text-2xl"></i></a>
+							<a href=""><i class="bi bi-cart-plus text-2xl"></i></a>
+						</section>
+						<button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm md:hidden" aria-controls="navbar-cta" aria-expanded="false">
+							<span class="sr-only">Open main menu</span>
+							<i class="bi bi-list text-3xl"></i>
+						</button>
+					</div>
+					<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+						<ul class="flex flex-col font-medium md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+							<li>
+								<a href="./index.html" class="block py-2 px-3 md:p-0 rounded md:bg-transparent style-navbar">Home</a>
+							</li>
+							<li>
+								<a href="./shop.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded style-navbar">Shop</a>
+							</li>
+							<li>
+								<a href="./about-us.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded style-navbar">About Us</a>
+							</li>
+							<li>
+								<a href="./blog.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded style-navbar">Blog</a>
+							</li>
+							<li>
+								<a href="./cantact.html" class="block px-3 md:p-0 text-gray-900 rounded style-navbar">Contact</a>
+							</li>
+							<li>
+								<a href="./login.html" class="md:hidden block py-2 px-3 md:p-0 text-gray-900 rounded style-navbar">Login</a>
+							</li>
+							<li>
+								<a href="./register.html" class="md:hidden block py-2 px-3 md:p-0 text-gray-900 rounded style-navbar">Register</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</nav>
+		<!-- End Navigation Bar -->
+
+		<section class="flex gap-3 bg-gray-200 py-5 text-gray-600 font-medium pl-4 md:pl-48">
+			<i class="bi bi-house-door"></i>
+			<a href="./index.html">Home</a>
+			<i class="bi bi-chevron-right"></i>
+			<a href="./blog.html" class="text-secondary-color">Blog</a>
+		</section>
+
+		<main class="container mx-auto px-4 mt-7 md:px-0">
+			<div class="flex items-center relative">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 absolute left-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+				</svg>
+				<input type="text" placeholder="Search Article" class="border rounded-lg py-3 pl-12 w-full md:w-72" />
+			</div>
+			<p class="text-2xl font-medium py-5">Recently Blog</p>
+			<div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+				<article class="col-span-2 border shadow rounded-lg p-5 mb-5 md:mb-0">
+					<img src="./img/blog/blog-03.png" class="w-full" alt="image-not-found" />
+					<p class="text-lg font-normal py-2">By <span class="text-[#592EA9] hover:underline cursor-pointer">John Doe</span> | May 23 , 2024</p>
+					<h1 class="text-2xl font-medium hover:underline cursor-pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h1>
+					<p class="py-3 text-gray-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+					<button class="background-secondary-color font-medium py-3 px-5 rounded-lg hover:text-[#FFD050] hover:bg-[#232536]">Read More <i class="bi bi-chevron-right"></i></button>
+				</article>
+				<article class="flex-col flex gap-4 w-full cursor-pointer">
+					<div class="border p-5 rounded-lg flex gap-5 hover:bg-gray-50">
+						<img src="./img/blog/blog-01.png" class="w-32 h-32 object-fill rounded-lg" alt="image-not-found" />
+						<div>
+							<p class="md:text-md font-normal py-2">By <span class="text-[#592EA9] hover:underline cursor-pointer">John Doe</span> | May 23 , 2024</p>
+							<h1 class="text-md md:text-xl font-medium hover:underline cursor-pointer">8 Figma design systems that you can download for free today.</h1>
+						</div>
+					</div>
+					<div class="border p-5 rounded-lg flex gap-5 hover:bg-gray-50">
+						<img src="./img/blog/blog-02.png" class="w-32 h-32 object-fill rounded-lg" alt="image-not-found" />
+						<div>
+							<p class="text-md font-normal py-2">By <span class="text-[#592EA9] hover:underline cursor-pointer">John Doe</span> | May 23 , 2024</p>
+							<h1 class="text-md md:text-xl font-medium hover:underline cursor-pointer">8 Figma design systems that you can download for free today.</h1>
+						</div>
+					</div>
+					<div class="border p-5 rounded-lg flex gap-5 hover:bg-gray-50">
+						<img src="./img/blog/blog-04.png" class="w-32 h-32 object-fill rounded-lg" alt="image-not-found" />
+						<div>
+							<p class="text-md font-normal py-2">By <span class="text-[#592EA9] hover:underline cursor-pointer">John Doe</span> | May 23 , 2024</p>
+							<h1 class="text-md md:text-xl font-medium hover:underline cursor-pointer">8 Figma design systems that you can download for free today.</h1>
+						</div>
+					</div>
+					<div class="border p-5 rounded-lg flex gap-5 hover:bg-gray-50">
+						<img src="./img/blog/blog-06.png" class="w-32 h-32 object-fill rounded-lg" alt="image-not-found" />
+						<div>
+							<p class="text-md font-normal py-2">By <span class="text-[#592EA9] hover:underline cursor-pointer">John Doe</span> | May 23 , 2024</p>
+							<h1 class="text-md md:text-xl font-medium hover:underline cursor-pointer">8 Figma design systems that you can download for free today.</h1>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<h5 class="text-2xl font-medium py-5">All Post</h5>
+			<div class="grid grid-cols-1 gap-4 mb-20">
+				<!-- Blog Card -->
+				<div class="grid md:flex gap-10 p-4 border rounded-lg md:w-[1300px]">
+					<img src="./img/blog/blog-06.png" alt="City View" class="w-full md:w-96 h-[230px] object-cover rounded-lg cursor-pointer" />
+					<div>
+						<div class="bg-amber-100 w-28 text-center font-medium rounded-md py-1 px-2">Business</div>
+						<h2 class="text-2xl font-medium py-3 hover:underline cursor-pointer">How to build rapport with your web design clients</h2>
+						<p class="pb-3 text-lg text-gray-500">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+						<div class="flex items-center justify-between pt-2">
+							<div class="flex">
+								<img src="./img/home/computer.png" alt="proflie" class="w-14 h-14 rounded-full cursor-pointer" />
+								<div class="pl-5">
+									<span class="text-lg">Viola Manisa</span><br />
+									<span class="font-medium">Aug 23, 2021</span>
+								</div>
+							</div>
+							<div>
+								<button class="background-secondary-color font-medium py-3 px-5 rounded-lg hover:text-[#FFD050] hover:bg-[#232536]">Read More <i class="bi bi-chevron-right"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid md:flex gap-10 p-4 border rounded-lg md:w-[1300px]">
+					<img src="./img/blog/blog-06.png" alt="City View" class="w-full md:w-96 h-[230px] object-cover rounded-lg cursor-pointer" />
+					<div>
+						<div class="bg-cyan-200 w-28 text-center font-medium rounded-md py-1 px-2">Business</div>
+						<h2 class="text-2xl font-medium py-3 hover:underline cursor-pointer">How to build rapport with your web design clients</h2>
+						<p class="pb-3 text-lg text-gray-500">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+						<div class="flex items-center justify-between pt-2">
+							<div class="flex">
+								<img src="./img/home/computer.png" alt="proflie" class="w-14 h-14 rounded-full cursor-pointer" />
+								<div class="pl-5">
+									<span class="text-lg">Viola Manisa</span><br />
+									<span class="font-medium">Aug 23, 2021</span>
+								</div>
+							</div>
+							<div>
+								<button class="background-secondary-color font-medium py-3 px-5 rounded-lg hover:text-[#FFD050] hover:bg-[#232536]">Read More <i class="bi bi-chevron-right"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid md:flex gap-10 p-4 border rounded-lg md:w-[1300px]">
+					<img src="./img/blog/blog-06.png" alt="City View" class="w-full md:w-96 h-[230px] object-cover rounded-lg cursor-pointer" />
+					<div>
+						<div class="bg-violet-200 w-28 text-center font-medium rounded-md py-1 px-2">Business</div>
+						<h2 class="text-2xl font-medium py-3 hover:underline cursor-pointer">How to build rapport with your web design clients</h2>
+						<p class="pb-3 text-lg text-gray-500">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+						<div class="flex items-center justify-between pt-2">
+							<div class="flex">
+								<img src="./img/home/computer.png" alt="proflie" class="w-14 h-14 rounded-full cursor-pointer" />
+								<div class="pl-5">
+									<span class="text-lg">Viola Manisa</span><br />
+									<span class="font-medium">Aug 23, 2021</span>
+								</div>
+							</div>
+							<div>
+								<button class="background-secondary-color font-medium py-3 px-5 rounded-lg hover:text-[#FFD050] hover:bg-[#232536]">Read More <i class="bi bi-chevron-right"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid md:flex gap-10 p-4 border rounded-lg md:w-[1300px]">
+					<img src="./img/blog/blog-06.png" alt="City View" class="w-full md:w-96 h-[230px] object-cover rounded-lg cursor-pointer" />
+					<div>
+						<div class="bg-emerald-100 text-black w-28 text-center font-medium rounded-md py-1 px-2">Business</div>
+						<h2 class="text-2xl font-medium py-3 hover:underline cursor-pointer">How to build rapport with your web design clients</h2>
+						<p class="pb-3 text-lg text-gray-500">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+						<div class="flex items-center justify-between pt-2">
+							<div class="flex">
+								<img src="./img/home/computer.png" alt="proflie" class="w-14 h-14 rounded-full cursor-pointer" />
+								<div class="pl-5">
+									<span class="text-lg">Viola Manisa</span><br />
+									<span class="font-medium">Aug 23, 2021</span>
+								</div>
+							</div>
+							<div>
+								<button class="background-secondary-color font-medium py-3 px-5 rounded-lg hover:text-[#FFD050] hover:bg-[#232536]">Read More <i class="bi bi-chevron-right"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Pagination -->
+				<div class="flex justify-center items-center space-x-2 mt-4 font-medium">
+					<button class="px-3 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Previous</button>
+					<!-- Page Numbers -->
+					<button class="px-5 py-2 background-primary-color text-white rounded-md hover:bg-[#ffd050]">1</button>
+					<button class="px-5 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">2</button>
+					<button class="px-5 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">3</button>
+					<span class="px-5 py-2">...</span>
+					<button class="px-3 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">10</button>
+					<!-- Next Button -->
+					<button class="px-3 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Next</button>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="background-primary-color">
+			<div class="mx-auto w-full max-w-screen-xl p-5">
+				<div class="md:flex md:justify-between">
+					<div class="mb-6 md:mb-0">
+						<a href="#" class="flex flex-col items-center pb-10">
+							<img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+							<span class="self-center text-white text-2xl font-semibold whitespace-nowrap">Flowbite</span>
+						</a>
+					</div>
+					<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 style-footer logo-image">
+						<div>
+							<h2 class="mb-5 text-xl font-medium text-white uppercase">SITE MAP</h2>
+							<ul class="text-white">
+								<li class="mb-3">
+									<a href="https://flowbite.com/" class="hover:underline">Home</a>
+								</li>
+								<li class="mb-3">
+									<a href="https://tailwindcss.com/" class="hover:underline">Shop</a>
+								</li>
+								<li class="mb-3">
+									<a href="https://flowbite.com/" class="hover:underline">Category</a>
+								</li>
+								<li class="mb-3">
+									<a href="https://flowbite.com/" class="hover:underline">Blog</a>
+								</li>
+								<li class="mb-3">
+									<a href="https://flowbite.com/" class="hover:underline">About Us</a>
+								</li>
+								<li>
+									<a href="https://flowbite.com/" class="hover:underline">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h2 class="mb-5 text-xl font-medium text-white uppercase">Follow us</h2>
+							<ul class="text-white">
+								<li class="mb-3">
+									<a href="#" class="hover:underline">Our Feature</a>
+								</li>
+								<li>
+									<a href="#" class="hover:underline">Privacy Policy</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h2 class="mb-5 text-xl font-medium text-white uppercase dark:text-white">CONTACT US</h2>
+							<ul class="text-white">
+								<li class="mb-3">
+									<a href="#" class="hover:underline">Privacy Policy</a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="hover:underline">Email</a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="hover:underline">LinkIn</a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="hover:underline">Telegram</a>
+								</li>
+								<li>
+									<a href="#" class="hover:underline">Facebook</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<span class="block font-medium text-sm text-white sm:text-center pt-5 mt-5">© 2024 <a href="#" class="hover:underline">Khmeng Code </a>. All Rights Reserved.</span>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<!--CDN Javascript Flowbite -->
+		<script src="./js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</body>
+</html>
