@@ -20,107 +20,105 @@
 		</section>
 		<!-- End Navigation Bar -->
 
-		<main>
-      <div class="max-w-7xl mx-auto py-12 px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <!-- Checkout Form -->
-          <div class="lg:col-span-2 bg-white p-4 md:p-6 rounded-lg shadow">
-            <h1 class="text-2xl font-bold mb-6">Checkout</h1>
-            <!-- Country Selector -->
-            <div class="mb-6">
-              <label for="country" class="block text-sm font-medium text-gray-700 mb-2">Country</label>
-              <div class="relative">
-                <select id="country" name="country" class="w-full p-3 border border-gray-300 rounded-lg">
-                  <option>Cambodia</option>
-                  <option>United States</option>
-                  <option>United Kingdom</option>
-                  <option>India</option>
-                </select>
-              </div>
-              <p class="mt-2 text-sm text-gray-500">KStore is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+		<main class="container max-w-screen-xl mx-auto py-12 px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Checkout Form -->
+        <div class="lg:col-span-2 bg-white p-4 md:p-6 rounded-lg shadow">
+          <h1 class="text-2xl font-bold mb-6">Checkout</h1>
+          <!-- Country Selector -->
+          <div class="mb-6">
+            <label for="country" class="block text-sm font-medium text-gray-700 mb-2">Country</label>
+            <div class="relative">
+              <select id="country" name="country" class="w-full p-3 border border-gray-300 rounded-lg">
+                <option>Cambodia</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>India</option>
+              </select>
             </div>
-    
-            <!-- Payment Method -->
-            <div>
-              <article class="flex justify-between items-center">
-                <h2 class="text-lg font-bold mb-2">Payment method</h2>
-                <p class="text-sm text-gray-500 mb-2">Secure and encrypted</p>
-              </article>
-              <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-300">
-                <h3 class="text-md font-medium text-gray-700 mb-4">Card</h3>
-                <form>
-                  <!-- Name on Card -->
-                  <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name on card</label>
-                    <input type="text" id="name" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="Name on card">
+            <p class="mt-2 text-sm text-gray-500">KStore is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+          </div>
+  
+          <!-- Payment Method -->
+          <div>
+            <article class="flex justify-between items-center">
+              <h2 class="text-lg font-bold mb-2">Payment method</h2>
+              <p class="text-sm text-gray-500 mb-2">Secure and encrypted</p>
+            </article>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-300">
+              <h3 class="text-md font-medium text-gray-700 mb-4">Card</h3>
+              <form>
+                <!-- Name on Card -->
+                <div class="mb-4">
+                  <label for="name" class="block text-sm font-medium text-gray-700">Name on card</label>
+                  <input type="text" id="name" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="Name on card">
+                </div>
+  
+                <!-- Card Number -->
+                <div class="mb-4">
+                  <label for="card-number" class="block text-sm font-medium text-gray-700">Card number</label>
+                  <input type="text" id="card-number" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="Card number">
+                </div>
+  
+                <!-- Expiry Date and CVV -->
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label for="expiry" class="block text-sm font-medium text-gray-700">Expiry date</label>
+                    <input type="text" id="expiry" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="MM/YY">
                   </div>
-    
-                  <!-- Card Number -->
-                  <div class="mb-4">
-                    <label for="card-number" class="block text-sm font-medium text-gray-700">Card number</label>
-                    <input type="text" id="card-number" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="Card number">
+                  <div>
+                    <label for="cvv" class="block text-sm font-medium text-gray-700">CVC/CVV</label>
+                    <input type="text" id="cvv" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="CVC">
                   </div>
-    
-                  <!-- Expiry Date and CVV -->
-                  <div class="grid grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <label for="expiry" class="block text-sm font-medium text-gray-700">Expiry date</label>
-                      <input type="text" id="expiry" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="MM/YY">
-                    </div>
-                    <div>
-                      <label for="cvv" class="block text-sm font-medium text-gray-700">CVC/CVV</label>
-                      <input type="text" id="cvv" class="w-full p-3 mt-1 border border-gray-300 rounded-lg" placeholder="CVC">
-                    </div>
-                  </div>
-    
-                  <!-- Save Card -->
-                  <div class="flex items-center mb-4">
-                    <input id="save-card" type="checkbox" class="w-4 h-4 text-indigo-600 border-gray-300 rounded">
-                    <label for="save-card" class="ml-2 text-sm text-gray-700">Securely save this card for my later purchase</label>
-                  </div>
-                </form>
+                </div>
+  
+                <!-- Save Card -->
+                <div class="flex items-center mb-4">
+                  <input id="save-card" type="checkbox" class="w-4 h-4 text-indigo-600 border-gray-300 rounded">
+                  <label for="save-card" class="ml-2 text-sm text-gray-700">Securely save this card for my later purchase</label>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Order Details -->
+          <div class="mt-8">
+            <h2 class="text-lg font-bold mb-4">Order details</h2>
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/80" alt="Product Image" class="w-20 h-20 rounded-lg">
+              <div class="ml-4 flex-1">
+                <p class="font-medium text-gray-700">Build A Chat Application With Firebase, Flutter and Provider</p>
+                <p class="text-purple-600 font-semibold">$120.45</p>
               </div>
             </div>
-    
-            <!-- Order Details -->
-            <div class="mt-8">
-              <h2 class="text-lg font-bold mb-4">Order details</h2>
-              <div class="flex items-center mb-4">
-                <img src="https://via.placeholder.com/80" alt="Product Image" class="w-20 h-20 rounded-lg">
-                <div class="ml-4 flex-1">
-                  <p class="font-medium text-gray-700">Build A Chat Application With Firebase, Flutter and Provider</p>
-                  <p class="text-purple-600 font-semibold">$120.45</p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <img src="https://via.placeholder.com/80" alt="Product Image" class="w-20 h-20 rounded-lg">
-                <div class="ml-4 flex-1">
-                  <p class="font-medium text-gray-700">Build A Chat Application With Firebase, Flutter and Provider</p>
-                  <p class="text-purple-600 font-semibold">$120.45</p>
-                </div>
+            <div class="flex items-center">
+              <img src="https://via.placeholder.com/80" alt="Product Image" class="w-20 h-20 rounded-lg">
+              <div class="ml-4 flex-1">
+                <p class="font-medium text-gray-700">Build A Chat Application With Firebase, Flutter and Provider</p>
+                <p class="text-purple-600 font-semibold">$120.45</p>
               </div>
             </div>
           </div>
-    
-          <!-- Summary Section -->
-          <div>
-            <div class="bg-purple-50 p-6 rounded-lg shadow">
-              <h2 class="text-xl font-bold mb-6">Summary</h2>
-              <div class="flex justify-between mb-4">
-                <p class="text-gray-700">Original Price:</p>
-                <p class="font-medium">$74.99</p>
-              </div>
-              <div class="flex justify-between mb-4">
-                <p class="text-gray-700">Discounts:</p>
-                <p class="font-medium text-red-600">- $63.00</p>
-              </div>
-              <div class="flex justify-between border-t pt-4 text-lg">
-                <p class="text-gray-900 font-bold">Total:</p>
-                <p class="text-gray-900 font-bold">$11.99</p>
-              </div>
-              <button class="w-full mt-6 bg-purple-600 text-white p-3 rounded-lg text-xl font-semibold hover:bg-purple-700">Complete Checkout</button>
-              <p class="text-xs text-gray-500 text-center mt-4">By completing your purchase, you agree to these <a href="#" class="text-purple-600 underline">Terms Of Service</a>.</p>
+        </div>
+  
+        <!-- Summary Section -->
+        <div>
+          <div class="bg-purple-50 p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-6">Summary</h2>
+            <div class="flex justify-between mb-4">
+              <p class="text-gray-700">Original Price:</p>
+              <p class="font-medium">$74.99</p>
             </div>
+            <div class="flex justify-between mb-4">
+              <p class="text-gray-700">Discounts:</p>
+              <p class="font-medium text-red-600">- $63.00</p>
+            </div>
+            <div class="flex justify-between border-t pt-4 text-lg">
+              <p class="text-gray-900 font-bold">Total:</p>
+              <p class="text-gray-900 font-bold">$11.99</p>
+            </div>
+            <button class="w-full mt-6 bg-purple-600 text-white p-3 rounded-lg text-xl font-semibold hover:bg-purple-700">Complete Checkout</button>
+            <p class="text-xs text-gray-500 text-center mt-4">By completing your purchase, you agree to these <a href="#" class="text-purple-600 underline">Terms Of Service</a>.</p>
           </div>
         </div>
       </div>
