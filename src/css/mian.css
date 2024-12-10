@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Kantumruy Pro';
+}
+
+/* Header Start */
+
+:root {
+	--primary-color: #232536;
+	--secondary-color: #FFD050; 
+    --Tertiary-color:#592EA9;
+	--background-color: #F5F5F5; 
+    --error-container-color: #FFDAD6;
+    --medium-gray-color: #6D6E76;
+	--text-color: #111111; 
+    --light-gray-color: #F4F4F4;
+    --light-yellow-color:#FBF6EA;
+    --lavender-color: #F4F0F8;
+	--error-color: #BA1A1A; 
+}
+
+.background-primary-color{
+    background-color: var(--primary-color);
+}
+
+.nav-bar-style{
+    padding: 20px 50px;
+}
